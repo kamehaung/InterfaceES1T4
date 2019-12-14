@@ -20,29 +20,29 @@ function addItem() {
 	var tdt = document.createElement("td");
 
 	var c = document.createElement("input");
-	c.setAttribute("name", "listaNotaVenda");
+	c.setAttribute("name", "codigo");
 	c.setAttribute("type", "text");
 	c.setAttribute("value", cod.value);
 
 	var p = document.createElement("input");
-	p.setAttribute("name", "listaNotaVenda");
+	p.setAttribute("name", "produto");
 	p.setAttribute("type", "text");
 	p.setAttribute("value", prod.value);
 
 	var q = document.createElement("input");
-	q.setAttribute("name", "listaNotaVenda");
+	q.setAttribute("name", "quant");
 	q.setAttribute("type", "number");
 	q.setAttribute("value", qtd.value);
 	
 
 	var pr = document.createElement("input");
-	pr.setAttribute("name", "listaNotaVenda");
+	pr.setAttribute("name", "preco");
 	pr.setAttribute("type", "number");
 	pr.setAttribute("step", "0.01");
 	pr.setAttribute("value", preco.value);
 
 	var t = document.createElement("input");
-	t.setAttribute("name", "listaNotaVenda");
+	t.setAttribute("name", "total");
 	t.setAttribute("type", "number");
 	t.setAttribute("step", "0.01");
 	t.setAttribute("value", qtd.value*preco.value);
@@ -72,4 +72,13 @@ function addItem() {
 
 }
 
+function clear(){
+	desc = 0;
+	liq = 0;
+	valor = 0;
+}
+
+function insertChat(who, text){
+	
+}
 

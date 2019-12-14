@@ -20,9 +20,13 @@
 	<div class="top-bar" id="responsive-menu">
 		<div class="top-bar-right">
 			<ul class="dropdown menu" data-dropdown-menu>
-				<li><a class="button" href="">Nota de Venda</a></li>
-				<li><a class="button" href="notaCompra.jsp">Nota de Compra</a></li>
-				<li><a class="button" href="produto.jsp">Produto</a></li>				
+				<li><a class="button" href=""
+					style="margin-right: 5px;">Nota de Venda</a></li>
+				<li><a class="button" href="notaCompra.jsp"
+					style="margin-right: 5px;">Nota de Compra</a></li>
+				<li><a class="button" href="produto.jsp"
+					style="margin-right: 5px;">Produto</a></li>
+				<li><a class="button" href="chat.jsp">Chat</a></li>
 			</ul>
 		</div>
 	</div>
@@ -37,7 +41,7 @@
 				<div class="medium-6 cell">
 					<div class="input-group">
 						<span class="input-group-label"> Numero da Nota</span> <input
-							class="input-group-field" type="text" name="nome">
+							class="input-group-field" type="text" name="numNota">
 					</div>
 				</div>
 
@@ -64,7 +68,7 @@
 							class="input-group-label">Qtd</span> <input id="qtd"
 							class="input-group-field" type="number"></input> <span
 							class="input-group-label">Preco</span> <input id="preco"
-							class="input-group-field" type="number" step="0.01"></input> 
+							class="input-group-field" type="number" step="0.01"></input>
 
 						<div class="input-group-button">
 							<button class="button" type="button" onclick="addItem()"
@@ -91,28 +95,29 @@
 			<div class="row">
 				<div class="columns uncentered">
 					<div class="input-group">
-						<span class="input-group-label">Total Nota</span> 
-						<input id="totNota" class="input-group-field" type="number" name="totNota" step="0.01" readonly>
+						<span class="input-group-label">Total Nota</span> <input
+							id="totNota" class="input-group-field" type="number"
+							name="totNota" step="0.01" readonly>
 					</div>
 				</div>
 				<div class="columns uncentered">
 					<div class="input-group">
-						<span class="input-group-label">Desconto</span> 
-						<input id="desc"
-							class="input-group-field" type="number" name="descTot" step="0.01">
+						<span class="input-group-label">Desconto</span> <input id="desc"
+							class="input-group-field" type="number" name="descTot"
+							step="0.01">
 					</div>
 				</div>
 				<div class="columns uncentered">
 					<div class="input-group">
-						<span class="input-group-label">Valor Liquido</span>
-						 <input id="valorLiq"
-							class="input-group-field" type="number" name="valorLiq" step="0.01" readonly>
+						<span class="input-group-label">Valor Liquido</span> <input
+							id="valorLiq" class="input-group-field" type="number"
+							name="valorLiq" step="0.01" readonly>
 					</div>
 				</div>
 			</div>
 
-			<input type="submit" class="button" value="Registrar"></input> <input
-				type="reset" class="button float-right" value="Cancelar"></input>
+			<input type="submit" class="button" value="Registrar" onclick=clear()></input>
+			<input type="reset" class="button float-right" value="Cancelar"></input>
 
 		</div>
 	</form>
