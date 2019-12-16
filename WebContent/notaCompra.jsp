@@ -20,10 +20,14 @@
 	<div class="top-bar" id="responsive-menu">
 		<div class="top-bar-right">
 			<ul class="dropdown menu" data-dropdown-menu>
-				<li><a class="button" href="index.jsp" style="margin-right:5px ;">Nota de Venda</a></li>
-				<li><a class="button" href="" style="margin-right:5px ;">Nota de Compra</a></li>
-				<li><a class="button" href="produto.jsp" style="margin-right:5px ;">Produto</a></li>
-				<li><a class="button" href="chat.jsp">Chat</a></li>
+				<li><a class="button" href="index.jsp"
+					style="margin-right: 5px;">Nota de Venda</a></li>
+				<li><a class="button" href="" style="margin-right: 5px;">Nota
+						de Compra</a></li>
+				<li><a class="button" href="produto.jsp"
+					style="margin-right: 5px;">Produto</a></li>
+				<li><a class="button" href="chat.jsp" style="margin-right: 5px;">Chat</a></li>
+				<li><a class="button" href="consultaNota.jsp">Consulta</a></li>
 			</ul>
 		</div>
 	</div>
@@ -48,7 +52,7 @@
 							class="input-group-field" type="date" name="data">
 					</div>
 				</div>
-				
+
 				<div class="medium-12 cell">
 					<div class="input-group">
 						<span class="input-group-label">Fornecedor</span> <input
